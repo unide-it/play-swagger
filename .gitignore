@@ -1,4 +1,19 @@
-# Ignore Play! working directory #
+# Project exclude paths
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.bsp
+/.gradle
+/.project
+/database/hibernate-generated.sql
+/.settings
+/RUNNING_PID
+/public
+null
+
+
 bin/
 /db
 .eclipse
