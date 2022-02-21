@@ -10,4 +10,8 @@ swaggerDomainNameSpaces := Seq("models")
 scalaVersion := "2.13.6"
 
 libraryDependencies += guice
-libraryDependencies += "org.webjars" % "swagger-ui" % "4.5.0"
+
+libraryDependencies ++= Seq(
+
+  "org.webjars" % "swagger-ui" % "4.5.0"  //play-swagger ui integration
+)

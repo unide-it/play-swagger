@@ -3,14 +3,29 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.HomeController.index
-GET    /explore                     controllers.HomeController.explore
-GET    /tutorial                    controllers.HomeController.tutorial
+###
+#  summary: Index controller
+#  tags:
+#    - Index Endpoints
+#  responses:
+#    200:
+#      description: success
+###
+GET        /                        controllers.HomeController.index
 
-GET   /docs/swagger-ui/*file        controllers.Assets.at(path:String="/public/lib/swagger-ui", file:String)
+###
+#  summary: Explore controller
+#  tags:
+#    - Explore Endpoints
+#  responses:
+#    200:
+#      description: success
+###
+GET        /explore                 controllers.HomeController.explore
+GET        /tutorial                controllers.HomeController.tutorial
+
+GET        /swagger-ui/*file        controllers.Assets.at(path:String="/public/lib/swagger-ui", file:String)
+
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
-
-
-GET     /swagger.json           controllers.HomeController.index
+GET        /assets/*file            controllers.Assets.versioned(path="/public", file: Asset)
